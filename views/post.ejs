@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= post.title %> - My Blog</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1><%= post.title %></h1>
+  <p><small>Published on <%= post.createdAt.toDateString() %></small></p>
+  <div class="post-content">
+    <p><%= post.content %></p>
+  </div>
+
+  <a href="/">← Back to Home</a>
+</body>
+</html>
